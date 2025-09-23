@@ -13,7 +13,7 @@ public interface ISalaMapa {
     @Mapping(source = "nombre", target = "nombre")
     @Mapping(source = "capacidad", target = "capasidad")
     @Mapping(source = "tipo", target = "tipo")
-    SalaDTO covertirADTO(Sala sala);
+    SalaDTO convertirADTO(Sala sala);
 
     //DTO para devolver a lista
     List<SalaDTO> convertirAListaDTO(List<Sala> lista);

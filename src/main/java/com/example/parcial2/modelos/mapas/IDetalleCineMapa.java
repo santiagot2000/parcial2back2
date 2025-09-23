@@ -14,7 +14,7 @@ public interface IDetalleCineMapa {
     @Mapping(source = "direccion", target = "direccion")
     @Mapping(source = "ciudad", target = "ciudad")
     @Mapping(source = "telefono", target = "telefono")
-    DetalleCineDTO covertirADTO(DetalleCineDTO detalleCines);
+    DetalleCineDTO convertirADTO(DetalleCine detalleCines);
 
     //DTO para devolver a lista
     List<DetalleCineDTO> convertirAListaDTO(List<DetalleCine>lista);

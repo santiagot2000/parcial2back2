@@ -10,7 +10,7 @@ public interface ICineMapa {
 
     @Mapping(source = "nombre", target = "nombre")
     @Mapping(source = "nit", target = "nit")
-    CineDTO covertirADTO(Cine cine);
+    CineDTO convertirADTO(Cine cine);
 
     //DTO para devolver a lista
     List<CineDTO> convertirAListaDTO(List<Cine> lista);
