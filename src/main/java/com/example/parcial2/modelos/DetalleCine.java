@@ -76,4 +76,12 @@ public class DetalleCine {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+    public Cine getCine() {
+        return cine;
+    }
+
+    public void setCine(Cine cine) {
+        this.cine = cine;
+    }
 }

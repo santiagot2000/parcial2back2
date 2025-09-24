@@ -1,5 +1,6 @@
 package com.example.parcial2.repositorios;
 
+import com.example.parcial2.ayudas.Sala.Tipo;
 import com.example.parcial2.modelos.Sala;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -9,9 +10,13 @@ import java.util.Optional;
 
 @Repository
 public interface ISalaRepositorio extends JpaRepository<Sala, Long> {
-    // Buscar sala por id
-    Optional<Sala> findById(Long id);
 
     // Buscar por tipo se dala
-    Optional<Sala> findBySala(String sala);
+    Optional<Sala> findBySala(String nombre);
+
+    // Buscar por tipo
+    List<Sala> findByTipo(Tipo tipo);
+
+    // Buscar por capacidad
+    List<Sala> findByCapacidad(Integer capacidad);
 }
