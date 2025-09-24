@@ -12,7 +12,7 @@ import java.util.Optional;
 public interface ISalaRepositorio extends JpaRepository<Sala, Long> {
 
     // Buscar por tipo se dala
-    Optional<Sala> findBySala(String nombre);
+    Optional<Sala> findByNombre(String nombre);
 
     // Buscar por tipo
     List<Sala> findByTipo(Tipo tipo);
